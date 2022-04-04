@@ -1,0 +1,38 @@
+#grid {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+}
+
+.buttons {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.cell {
+    display: inline-block;
+    border: 1px solid black;
+    
+    flex: 1 1 auto;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px;
+}
+
+.hovered {
+    background-color: black;
+}
