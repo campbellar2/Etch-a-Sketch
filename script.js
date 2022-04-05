@@ -1,7 +1,13 @@
 // important variables from html
 const container = document.querySelector("#grid");
+const btnClear = document.getElementById("clear");
+const btnSize = document.querySelector("#size");
+
 let rows = document.getElementsByClassName("row");
 let cells = document.getElementsByClassName("cell");
+
+// assigning functions to buttons
+
 
 //creates the grid
 function makeGrid(num) {
@@ -24,3 +30,12 @@ for (i = 0; i < cells.length; i ++) {
         event.target.classList.add("hovered");
     })
 }
+
+//clear board function
+function clearBoard() {
+    for (i = 0; i < cells.length; i ++) {
+        cells[i].classList.remove("hovered");
+    };
+}
+
+btnClear.addEventListener('click', clearBoard());
