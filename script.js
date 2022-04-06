@@ -7,7 +7,7 @@ let rows = document.getElementsByClassName("row");
 let cells = document.getElementsByClassName("cell");
 
 // assigning functions to buttons
-btnClear.addEventListener('click', clearBoard);
+btnClear.onclick = clearBoard;
 
 //creates the grid
 function makeGrid(num) {
@@ -36,3 +36,11 @@ function clearBoard() {
         cells[i].classList.remove("hovered");
     };
 }
+
+//deletes the old board
+function deleteBoard() {
+    while (container.hasChildNodes()) {
+        container.removeChild(container.firstChild);
+    };
+}
+
