@@ -46,7 +46,6 @@ function resizeBoard() {
     makeGrid(num);  
 }
 
-
 //deletes the old board
 function deleteBoard() {
     while (container.hasChildNodes()) {
